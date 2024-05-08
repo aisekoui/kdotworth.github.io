@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kendrick Lamar Duckworth</title>
+    <!-- Include jQuery for fade effects -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Import the custom font */
+        @font-face {
+    src: url(tradegothic.ttf);
+    font-family: tgc;
+}
+
+	@font-face {
+    src: url(timesregular.ttf);
+    font-family: tir;
+}
+
+        html, body {
+            height: 100%;
+            overflow: hidden; /* Prevents overall body scrolling */
+        }
+
+        /* Container to hold both sides with equal width */
+        .container {
+            display: flex; /* Use flexbox for equal-width sides */
+            height: 100%; /* Ensure full height for the content area */
+        }
+
+        /* Left content for fading images with dark overlay */
+        .left-content {
+            width: 50%; /* Equal width for both sides */
+            position: relative; /* Allows for absolute positioning */
+            overflow: hidden; /* Ensures images do not overflow the container */
+        }
+
+        /* Scrollable right side */
+.right-content {
+    width: 50%; /* Equal width for both sides */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px; /* Optional padding */
+	
+	
+}
+
+
+        /* CSS for fading images with dark overlay */
+        .images {
+            position: relative; /* Allows absolute positioning of text */
+            height: 100%; /* Occupy full height */
+        }
+
+        .images img {
+            display: none; /* Initially hide all images */
+            position: absolute; /* Allows images to overlap for fade effect */
+            top: 0;
+            left: 0;
+            width: 100%; /* Ensure the images cover the entire container */
+            height: 100%; /* Ensures the images cover the entire container */
+            object-fit: cover; /* Ensures images scale properly without distortion */
+        }
+
+        /* Dark overlay to darken the images without affecting the text */
+        .dark-overlay {
+            position: absolute; /* Allows for full overlay */
+            top: 0;
+            left: 0;
+            width: 100%; /* Full width of the container */
+            height: 100%; /* Full height of the container */
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black, adjust opacity as needed */
+            z-index: 1; /* Lower z-index to ensure it stays behind the text */
+        }
+
+.text-overlay {
+    position: absolute; /* Ensures consistent positioning relative to the parent */
+    top: 20%; /* Adjusts vertical position of the entire text container */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Centers horizontally */
+    z-index: 2; /* Ensures it stays above other elements */
+    width: 90%; /* Widen the space for the description */
+    text-align: center; /* Centers text alignment */
+}
+
+.artist-name {
+    font-family: tgc; /* Custom font */
+    font-size: 120px; /* Large font for the artist's name */
+    color: #FFFFFF; /* White text */
+    position: absolute; /* Absolute positioning to keep it fixed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Centers horizontally */
+}
+
+.description {
+    font-family: tir; /* Custom font */
+    font-size: 24px; /* Description font size */
+    color: #FFFFFF; /* White text */
+    position: absolute; /* Absolute positioning to ensure consistency */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, 200px); /* Move 50px down */
+    width: 90%; /* Allow a wider space for the description */
+    text-align: center; /* Centers the text alignment */
+}
+
+.image {
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the entire area without distortion */
+    display: block; /* Ensure it's displayed as a block-level element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-content">
+            <div class="images">
+                <img src="kdot1.jpg" alt="Kendrick Lamar Duckworth" />
+                <img src="kdot2.png" alt="Kendrick Lamar Duckworth" />
+                <img src="kdot3.png" alt="Kendrick Lamar Duckworth" />
+                <!-- Add more images as needed -->
+            </div>
+            <div class="dark-overlay"></div> <!-- The dark overlay to darken the background -->
+            <div class="text-overlay">
+                <div class="artist-name">K. DOT</div>
+                <div class="description">Kendrick Lamar Duckworth (born June 17, 1987) is an American rapper and songwriter from Compton, California.</div>
+            </div>
+        </div>
+<div class="right-content">
+    <!-- Centered introduction paragraph with added spacing -->
+	<div style="text-align: center;"> <!-- Center the image -->
+        <img src="pg-logo.png" alt="J. Cole Album"> <!-- Adjust width as needed -->
+    </div>
+	
+    <p style="font-family: 'mont'; font-size: 20px; color: #000000; text-align: center; margin-top: 20px; margin-bottom: 40px;">
+Kendrick Lamar has produced a remarkable body of work that has earned him a place among the greatest artists in hip-hop history. Known for his complex storytelling and socially conscious themes, Kendrick's albums are revered for their depth and thought-provoking content. Since his debut, Kendrick Lamar has crafted a distinctive style of music that blends intricate lyricism, powerful messages, and innovative production.
+    </p>
+
+    <!-- Image of Cole's album with added spacing -->
+    <div style="text-align: center; margin-bottom: 20px;"> <!-- Add margin below the image -->
+<img class="image" src="album1.jpg" alt="J. Cole Album 1">
+    </div>
+    
+    <!-- Description of the album with added spacing -->
+    <p style="font-family: 'tgc'; font-size: 20px; color: #000000; text-align: center; margin-top: 20px;">
+SECTION.80
+    </p>
+	   
+	   <p style="font-family: 'tir'; font-size: 16px; color: #888888; text-align: center; margin-top: 20px;">
+        
+
+"Section.80" is Kendrick Lamar's debut studio album, released in 2011. The album serves as a powerful introduction to Kendrick's storytelling abilities and his perspective on social and political issues. Set against the backdrop of Compton, California, "Section.80" explores themes of poverty, violence, addiction, and the struggles of a generation growing up in challenging circumstances.
+    </p>
+
+
+  <div style="text-align: center; margin-top: 40px;"> <!-- Add margin below the image -->
+ <img class="image" src="album2.jpg" alt="J. Cole Album 1">
+    </div>
+    
+    <!-- Description of the album with added spacing -->
+    <p style="font-family: 'tgc'; font-size: 20px; color: #000000; text-align: center; margin-top: 20px;">
+GOOD KID, M.A.A.D CITY
+    </p>
+	   
+
+	   <p style="font-family: 'tir'; font-size: 16px; color: #888888; text-align: center; margin-top: 20px;">
+        
+
+"good kid, m.A.A.d city" is Kendrick Lamar's second studio album, released in 2012, and is often regarded as a modern hip-hop classic. The album serves as a compelling concept narrative, chronicling Kendrick's experiences growing up in Compton, California. It explores themes of gang violence, peer pressure, and the struggle to find one's identity amidst challenging circumstances.
+    </p>
+	
+	  <div style="text-align: center; margin-top: 40px;"> <!-- Add margin below the image -->
+ <img class="image" src="album3.jpg" alt="J. Cole Album 1">
+    </div>
+    
+    <!-- Description of the album with added spacing -->
+    <p style="font-family: 'tgc'; font-size: 20px; color: #000000; text-align: center; margin-top: 20px;">
+TO PIMP A BUTTERFLY
+    </p>
+	   
+
+	   <p style="font-family: 'tir'; font-size: 16px; color: #888888; text-align: center; margin-top: 20px;">
+        
+
+"To Pimp a Butterfly" is Kendrick Lamar's third studio album, released in 2015, and is widely celebrated for its ambitious scope and profound social commentary. The album explores themes of racial identity, institutional oppression, and the black experience in America, blending hip-hop with jazz, funk, and soul influences.
+    </p>
+	
+		  <div style="text-align: center; margin-top: 40px;"> <!-- Add margin below the image -->
+ <img class="image" src="album4.jpg" alt="J. Cole Album 1">
+    </div>
+    
+    <!-- Description of the album with added spacing -->
+    <p style="font-family: 'tgc'; font-size: 20px; color: #000000; text-align: center; margin-top: 20px;">
+DAMN. 
+    </p>
+	   
+
+	   <p style="font-family: 'tir'; font-size: 16px; color: #888888; text-align: center; margin-top: 20px;">
+"DAMN." is Kendrick Lamar's fourth studio album, released in 2017, and it continues his streak of critically acclaimed works. The album explores themes of morality, spirituality, and the complexities of human nature, using a mix of introspective lyrics and energetic beats. It reflects Kendrick's ongoing examination of the American experience, while also delving into personal conflicts and societal pressures.
+    </p>
+	
+			  <div style="text-align: center; margin-top: 40px;"> <!-- Add margin below the image -->
+ <img class="image" src="album5.png" alt="J. Cole Album 1">
+    </div>
+    
+    <!-- Description of the album with added spacing -->
+    <p style="font-family: 'tgc'; font-size: 20px; color: #000000; text-align: center; margin-top: 20px;">
+MR. MORALE & THE BIG STEPPERS
+    </p>
+	   
+
+	   <p style="font-family: 'tir'; font-size: 16px; color: #888888; text-align: center; margin-top: 20px;">
+	   
+
+"Mr. Morale & The Big Steppers" is Kendrick Lamar's fifth studio album, released in 2022. The album represents a highly anticipated return for Kendrick Lamar after a five-year hiatus following the critically acclaimed "DAMN." Known for its introspective themes and complex storytelling, this double album addresses topics like mental health, generational trauma, and personal accountability, weaving a narrative that challenges listeners to confront difficult truths.
+    </p>
+	
+	
+</div>
+
+
+    <!-- JavaScript to handle the fade-in/fade-out effect and text change -->
+    <script>
+        $(function() {
+            var images = $(".images img").hide(); /* Initially hide all images */
+            var descriptions = [
+                "Kendrick Lamar Duckworth (born June 17, 1987) is an American rapper and songwriter from Compton, California.",
+                "Known for his storytelling, imagery, wordplay, passion and varied song structures, Kendrick brings hard-hitting lyricism with narratives to the West Coast, not traditionally known for its lyricists.",
+                "Kendrick Lamar’s position within the rap game is held incredibly high. Lamar was ranked at No. 2 on Billboard’s 10 Best Rappers of All Time list, alongside artists like Jay-Z, Nas, Notorious B.I.G. and more.",
+                // Add more descriptions matching the order of images
+            ];
+            var current = 0;
+            images.eq(current).fadeIn(); /* Show the first image */
+            setInterval(function() {
+                var next = (current + 1) % images.length;
+                images.eq(current). fadeOut(); /* Fade out the current image */
+                images.eq(next).fadeIn(); /* Fade in the next image */
+                $(".text-overlay .description").text(descriptions[next]); /* Update description text */
+                current = next; /* Update the current index */
+            }, 5000); /* Change the image every 3 seconds, adjust as needed */
+        });
+    </script>
+</body>
+</html>
+
+
+
